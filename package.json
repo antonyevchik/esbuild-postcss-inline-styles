@@ -2,9 +2,11 @@
   "name": "esbuild-postcss-inline-styles",
   "version": "1.0.0",
   "description": "Postcss plugin for esbuild with support of injecting css styles into js bundle file",
-  "main": "index.js",
+  "type": "module",
+  "main": "lib/esbuild-postcss-inline-styles.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node esbuild.config.js"
   },
   "repository": {
     "type": "git",
@@ -14,12 +16,21 @@
     "esbuild",
     "postcss",
     "plugin",
-    "inline"
+    "inline",
+    "inject"
   ],
   "author": "Anton Yevchik",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/antonyevchik/esbuild-postcss-inline-styles/issues"
   },
-  "homepage": "https://github.com/antonyevchik/esbuild-postcss-inline-styles#readme"
+  "homepage": "https://github.com/antonyevchik/esbuild-postcss-inline-styles#readme",
+  "devDependencies": {
+    "esbuild": "^0.21.4",
+    "@types/node": "^20.13.0",
+    "postcss": "^8.4.38",
+    "postcss-load-config": "^5.1.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  }
 }

@@ -1,4 +1,4 @@
-# esbuild-plugin-postcss-inline-styles
+# Description
 
 Postcss plugin for [esbuild](https://esbuild.github.io/) with support of injecting css styles into js bundle file. \
 The plugin will process the styles with `postcss` and inject them into the `out.js` bundle file,
@@ -39,10 +39,10 @@ Create `main.css` file:
 @tailwind utilities;
 ```
 
-Import `main.css` to `index.js`:
+Import `main.css` to `index.ts`:
 
 ```js
-// index.js
+// index.ts
 
 import 'main.css'
 ```
@@ -56,7 +56,7 @@ import * as esbuild from 'esbuild'
 import postcssInlineStyles from 'esbuild-plugin-postcss-inline-styles'
 
 await esbuild.build({
-    entryPoints: ['index.js'],
+    entryPoints: ['index.ts'],
     bundle: true,
     outfile: 'out.js',
     plugins: [postcssInlineStyles()],
