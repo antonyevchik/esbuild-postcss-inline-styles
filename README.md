@@ -11,7 +11,7 @@ npm i -D esbuild-plugin-postcss-inline-styles
 ```
 or yarn
 ```bash
-yarn add -D esbuild-plugin-postcss-inline-styles
+yarn add esbuild-plugin-postcss-inline-styles --dev
 ```
 
 ## Usage
