@@ -7,7 +7,7 @@ so you will get a single bundle file with the styles inside.
 ## Install
 
 ```bash
-npm i  -D esbuild-plugin-postcss-inline-styles
+npm i -D esbuild-plugin-postcss-inline-styles
 ```
 or yarn
 ```bash
@@ -39,10 +39,10 @@ Create `main.css` file:
 @tailwind utilities;
 ```
 
-Import `main.css` to `index.ts`:
+Import `main.css` to `index.js`:
 
 ```js
-// index.ts
+// index.js
 
 import 'main.css'
 ```
@@ -56,7 +56,7 @@ import * as esbuild from 'esbuild'
 import postcssInlineStyles from 'esbuild-plugin-postcss-inline-styles'
 
 await esbuild.build({
-    entryPoints: ['index.ts'],
+    entryPoints: ['index.js'],
     bundle: true,
     outfile: 'out.js',
     plugins: [postcssInlineStyles()],
