@@ -7,11 +7,11 @@ so you will get a single bundle file with the styles inside.
 ## Install
 
 ```bash
-npm i -D esbuild-plugin-postcss-inline-styles
+npm i -D esbuild-postcss-inline-styles
 ```
 or yarn
 ```bash
-yarn add esbuild-plugin-postcss-inline-styles --dev
+yarn add esbuild-postcss-inline-styles --dev
 ```
 
 ## Usage
