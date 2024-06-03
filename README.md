@@ -53,7 +53,7 @@ Import plugin to your `esbuild.config.js`
 // esbuild.config.js
 
 import * as esbuild from 'esbuild'
-import postcssInlineStyles from 'esbuild-plugin-postcss-inline-styles'
+import postcssInlineStyles from 'esbuild-postcss-inline-styles'
 
 await esbuild.build({
     entryPoints: ['index.js'],
